@@ -13,6 +13,7 @@ function blurring() {
   }
   loadText.innerText = `${load}%`;
   loadText.style.opacity = scale(load, 0, 100, 1, 0);
+  background.style.filter = `blur(${scale(load, 0, 100, 0, 30)}px)`;
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
